@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of M. Hiranya - Computer Science Student and Hackathon Enthusiast">
+<title>M. Hiranya | Portfolio</title>
+<style>
+:root{
+  --bg:#0b1020; --card:#121a2f; --text:#eef2ff; --muted:#aab4d0;
+  --accent:#7c5cff; --accent2:#25d0ab; --line:rgba(255,255,255,.1);
+}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(11,16,32,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 22px}
+.logo{font-weight:800;font-size:20px}.logo span{color:var(--accent2)}
+.links{display:flex;gap:22px}.links a{color:var(--muted);font-size:14px}.links a:hover{color:white}
+section{max-width:1100px;margin:auto;padding:90px 22px 40px}
+.hero{min-height:100vh;display:flex;align-items:center;gap:55px;padding-top:120px}
+.hero-text{flex:1}.tag{display:inline-block;color:var(--accent2);font-weight:700;margin-bottom:12px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin-bottom:20px}
+h1 span{color:var(--accent)}
+.hero p{max-width:680px;color:var(--muted);font-size:18px}
+.buttons{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:12px 19px;border-radius:10px;border:1px solid var(--line);background:var(--card);font-weight:700}
+.btn.primary{background:var(--accent);border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.hero-card{width:300px;height:300px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,#182447,#10172b);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 70px rgba(0,0,0,.3)}
+.initials{width:180px;height:180px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:62px;font-weight:900;background:linear-gradient(135deg,var(--accent),var(--accent2));color:white}
+.title{font-size:34px;margin-bottom:12px}.subtitle{color:var(--muted);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{margin-bottom:10px}.card p,.card li{color:var(--muted)}
+.card ul{padding-left:20px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{padding:9px 13px;border-radius:999px;background:#1a2440;border:1px solid var(--line);font-size:14px}
+.skill.new{border-color:rgba(37,208,171,.45);color:#bff9ed}
+.timeline{border-left:2px solid var(--accent);padding-left:22px}
+.timeline .item{margin-bottom:24px}.item h3{font-size:19px}.item small{color:var(--accent2)}
+.contact-box{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.contact{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.contact b{display:block;margin-bottom:4px}.contact span{color:var(--muted);word-break:break-word}
+footer{text-align:center;color:var(--muted);padding:40px 20px;border-top:1px solid var(--line);margin-top:60px}
+@media(max-width:760px){
+ .links{display:none}.hero{flex-direction:column;justify-content:center;text-align:center}
+ .hero-card{width:220px;height:220px;order:-1}.initials{width:135px;height:135px;font-size:45px}
+ .hero p{font-size:16px}.buttons{justify-content:center}.grid,.contact-box{grid-template-columns:1fr}
+ section{padding-top:80px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav">
+    <a class="logo" href="#home">H<span>.</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#hackathon">Hackathon</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <div class="tag">COMPUTER SCIENCE STUDENT • HACKATHON ENTHUSIAST</div>
+    <h1>Hi, I'm <span>Hiranya.</span></h1>
+    <p>
+      A motivated student who enjoys learning new technologies, working with teams,
+      solving problems and building practical ideas. Currently focused on developing
+      stronger technical and hackathon-ready skills.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Contact Me</a>
+      <a class="btn" href="#skills">View Skills</a>
+    </div>
+  </div>
+  <div class="hero-card"><div class="initials">MH</div></div>
+</section>
+
+<section id="about">
+  <h2 class="title">About Me</h2>
+  <p class="subtitle">A simple introduction based on my resume.</p>
+  <div class="card">
+    <p>
+      My career objective is to work in an organization that provides opportunities
+      to grow and learn while contributing to personal and organizational goals.
+      I value teamwork, communication, a positive attitude, honesty and dedication.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="title">Education</h2>
+  <p class="subtitle">Academic background</p>
+  <div class="timeline">
+    <div class="item">
+      <small>Currently Pursuing</small>
+      <h3>Vishwabharati Degree College</h3>
+      <p>Undergraduate studies</p>
+    </div>
+    <div class="item">
+      <small>2022 – 2024</small>
+      <h3>JRC Junior College</h3>
+      <p>Intermediate — 58%</p>
+    </div>
+    <div class="item">
+      <small>2021 – 2022</small>
+      <h3>City Central School of Excellence</h3>
+      <p>S.S.C. — 72%</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">Technical Skills</h2>
+  <p class="subtitle">Skills listed in the resume</p>
+  <div class="skills">
+    <span class="skill">MS Office</span>
+    <span class="skill">MS Word</span>
+    <span class="skill">Basic Computer Knowledge</span>
+    <span class="skill">Computer Operations</span>
+  </div>
+</section>
+
+<section id="hackathon">
+  <h2 class="title">Hackathon Skills</h2>
+  <p class="subtitle">Recommended skills to develop for hackathons — these are presented as learning/focus areas, not existing qualifications.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>💻 Web Development</h3>
+      <div class="skills">
+        <span class="skill new">HTML5</span><span class="skill new">CSS3</span>
+        <span class="skill new">JavaScript</span><span class="skill new">Responsive UI</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🧠 AI & APIs</h3>
+      <div class="skills">
+        <span class="skill new">AI Concepts</span><span class="skill new">REST APIs</span>
+        <span class="skill new">Prompt Engineering</span><span class="skill new">AI Integration</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🔧 Developer Tools</h3>
+      <div class="skills">
+        <span class="skill new">Git</span><span class="skill new">GitHub</span>
+        <span class="skill new">Debugging</span><span class="skill new">Deployment Basics</span>
+      </div>
+    </div>
+    <div class="card">
+      <h3>🚀 Hackathon Workflow</h3>
+      <div class="skills">
+        <span class="skill new">Rapid Prototyping</span><span class="skill new">Problem Solving</span>
+        <span class="skill new">Team Collaboration</span><span class="skill new">Project Presentation</span>
+        <span class="skill new">Pitching</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="title">Strengths</h2>
+  <p class="subtitle">Personal strengths from the resume</p>
+  <div class="grid">
+    <div class="card"><h3>Teamwork</h3><p>Comfortable contributing as part of a team.</p></div>
+    <div class="card"><h3>Communication</h3><p>Can communicate in English, Telugu and Hindi.</p></div>
+    <div class="card"><h3>Positive Attitude</h3><p>Approaches learning and work with a positive mindset.</p></div>
+    <div class="card"><h3>Dedication</h3><p>Committed to completing responsibilities honestly and sincerely.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">Let's Connect</h2>
+  <p class="subtitle">Contact details from the resume</p>
+  <div class="contact-box">
+    <div class="contact"><b>Email</b><span>mangalagirihiranya@gmail.com</span></div>
+    <div class="contact"><b>Mobile</b><span>9133225485</span></div>
+    <div class="contact"><b>Location</b><span>Jaggayyapeta</span></div>
+    <div class="contact"><b>Languages</b><span>English • Telugu • Hindi</span></div>
+  </div>
+</section>
+
+<footer>
+  © 2026 M. Hiranya • Personal Portfolio
+</footer>
+
+</body>
+</html>
